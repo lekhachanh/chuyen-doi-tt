@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/action_page.php">
+    Amount:<br>
+    <input type="number" type="text" id="account"/>
+</form>
+<br>
+From Curency:<br>
+<select name="curency1" id="currency1">
+    <option value="Việt Nam Đồng">VND</option>
+    <option value="Đô la Mỹ">USD</option>
+    <option value="UERO">UER</option>
+    <option value="Nhân dân tệ">NDT</option>
+</select><br>
+To Curency:<br>
+<select name="curency2" id="currency2">
+    <option value="Đô la Mỹ">USD</option>
+    <option value="Việt Nam Đồng" >VND</option>
+    <option value="UERO">UER</option>
+    <option value="Nhân dân tệ">NDT</option>
+</select><br>
+<button type="submit" onclick="convert()">CONVERT</button>
+<br>
+Result:
+<text id="result"></text>
+<script type="text/javascript" src="cdtt.js"></script>
+</body>
+</html>
